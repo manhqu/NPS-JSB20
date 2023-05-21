@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index3.css">
+    
+</head>
+<body>
+
+   
+      
+      
+    
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+              <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+      </head>
+      <body>
+      <div class="donation-container">
+                  
+                  <div class="donation-box">
+                      <div class="title">Donate</div>
+                      
+                      <div class="fields">
+                          <input type="text" id="firstName" placeholder="First Name"> </input>
+                          <input type="text" id="lastName" placeholder="Last Name"> </input>
+                          <input type="text" id="email" placeholder="Email"> </input>
+                      </div>
+                      
+                      <div class="amount">
+                          <div class="button">$30</div>
+                          <div class="button">$50</div>
+                          <div class="button">$100</div>
+                          <div class="button">$<input type="text" class="set-amount" placeholder=""> </input></div>
+                      </div>
+                      
+                     
+                      
+                      <div class="confirm">
+                          
+                      </div>
+                      
+                      <div class="donate-button"onclick="myFunction()"><i class="fa fa-credit-card"></i> Donate Now</div>
+                  </div>
+                  
+              </div>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://raw.githubusercontent.com/jerryluk/jquery.autogrow/master/jquery.autogrow-min.js"></script>
+      </body>
+      <script>
+       
+        function myFunction() {
+        var val_firstName = document.getElementById('firstName').value;
+        var val_lastName = document.getElementById('lastName').value;
+        var val_email = document.getElementById('email').value;
+        if (val_firstName==''){
+            alert('Error')
+        }
+        if (val_lastName==''){
+            alert('Error')
+        }
+        if (val_email==''){
+            alert('Error')
+        }
+        if(val_firstName !='' && val_lastName !='' &&  val_email !=''){
+            alert('Thanks You So Much')
+   
+        }
+    }
+    
+
+
+
+
+      </script>
+    
+</body>
+</html>
